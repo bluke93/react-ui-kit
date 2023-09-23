@@ -1,0 +1,130 @@
+.btn {
+  margin: 0;
+  padding: em(10px);
+  border-radius: em(5px);
+  font-family: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  gap: 4px;
+
+  &--size {
+    &-small {
+      font-size: em($text-sm);
+    }
+
+    &-medium {
+      font-size: em($text-md);
+    }
+
+    &-large {
+      font-size: em($text-lg);
+    }
+  }
+
+  &--icon-only {
+    min-width: auto;
+  }
+
+  &--full-width {
+    width: 100%;
+  }
+
+  &--primary {
+    border: 1px solid $bg-primary;
+    background-color: $bg-primary;
+    color: $text-primary;
+
+    &:hover {
+      border: 1px solid $bg-primary-hover;
+      background-color: $bg-primary-hover;
+    }
+    &:active {
+      border: 1px solid $bg-primary-active;
+      background-color: $bg-primary-active;
+    }
+  }
+
+  &--secondary {
+    border: 1px solid $bg-secondary;
+    background-color: $bg-secondary;
+    color: $text-secondary;
+
+    &:hover {
+      border: 1px solid $bg-secondary-hover;
+      background-color: $bg-secondary-hover;
+    }
+    &:active {
+      border: 1px solid $bg-secondary-active;
+      background-color: $bg-secondary-active;
+    }
+  }
+
+  &--ghost {
+    border: 2px solid $bg-secondary;
+    background-color: transparent;
+    color: $bg-secondary;
+
+    &:hover {
+      border: 2px solid $bg-secondary-hover;
+      background-color: $bg-secondary-hover;
+      color: $text-base-color;
+    }
+    &:active {
+      border: 2px solid $bg-secondary-active;
+      background-color: $bg-secondary-active;
+      color: $text-base-color;
+    }
+  }
+
+  &--text-only {
+    border: none;
+    background-color: transparent;
+    color: $text-base-color;
+    padding: 0;
+    margin: 0;
+
+    &:hover {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      color: $text-base-color-hover;
+      text-decoration: underline;
+    }
+    &:active {
+      border: none;
+      background-color: transparent;
+      color: $text-base-color-hover;
+    }
+  }
+
+  &--highlighted {
+    border: none;
+    background-color: transparent;
+    color: $bg-primary;
+    padding: 0;
+    margin: 0;
+    font-weight: 800;
+  
+    &:hover {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      color: $bg-primary-hover;
+      text-decoration: underline;
+    }
+  
+    &:active {
+      border: none;
+      background-color: transparent;
+      color: $bg-primary-hover;
+    }
+  }
+  
+  &:disabled {
+    opacity: 0.8;
+    pointer-events: none;
+  }
+}

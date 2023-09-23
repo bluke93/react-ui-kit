@@ -1,0 +1,13 @@
+@import './_variables.scss';
+@import './_functions.scss';
+@import './_components.scss';
+
+html,
+body {
+  background-color: $bg-base-color;
+  color: $text-base-color;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  font-size: em($text-md);
+}
