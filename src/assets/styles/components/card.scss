@@ -1,0 +1,15 @@
+.card {
+  background-color: $bg-card;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: fit-content;
+
+  &--spaced {
+    padding: em(10px);
+  }
+
+  &--full-width {
+    width: 100%;
+  }
+
+}
